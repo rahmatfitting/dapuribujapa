@@ -1,23 +1,16 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import ChatWidget from '@/components/Chat/ChatWidget';
-import { LanguageProvider } from '@/context/LanguageContext';
-import { ContentProvider } from '@/context/ContentContext';
-import { GoogleAnalytics } from '@next/third-parties/google';
-import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'LuxeVoyage - Elite Travel & Curated Experiences',
-  description: 'Bespoke travel experiences meticulously designed for your comfort and personal joy. From private jets to hidden villas, we make your dreams a reality.',
-  keywords: 'luxury travel, elite destinations, private jet, luxury villa, curated experiences, world tours',
+  title: 'Dapur Ibu Japa - Bekal Sehat Anak & Snack Ulang Tahun',
+  description: 'Pesan bekal sehat anak, snack box, dan nasi box dengan mudah. Praktis, higienis, dan siap antar.',
+  keywords: 'bekal anak, catering anak sehat, snack box ulang tahun, nasi box anak, bekal harian anak',
   openGraph: {
-    title: 'LuxeVoyage - Absolute Luxury Travel',
-    description: 'Explore the world with absolute luxury and curated experiences.',
+    title: 'Dapur Ibu Japa - Bekal Sehat Anak & Snack Ulang Tahun',
+    description: 'Pesan bekal sehat anak, snack box, dan nasi box dengan mudah. Praktis, higienis, dan siap antar.',
     type: 'website',
   },
 };
-
-import AnalyticsTracker from '@/components/Analytics/AnalyticsTracker';
 
 export default function RootLayout({
   children,
@@ -27,27 +20,23 @@ export default function RootLayout({
   return (
     <html lang="id">
       <head>
-        <AnalyticsTracker />
-        <Script id="microsoft-clarity" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY_ID || ''}");
-          `}
-        </Script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Dapur Ibu Japa",
+            "image": "",
+            "description": "Catering harian anak sehat, snack box ulang tahun, dan nasi box premium.",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "ID"
+            }
+          })
+        }} />
       </head>
       <body>
-        <LanguageProvider>
-          <ContentProvider>
-            {children}
-            <ChatWidget />
-          </ContentProvider>
-        </LanguageProvider>
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
-        )}
+        {children}
       </body>
     </html>
   );
