@@ -1,7 +1,7 @@
 export default function FloatingWhatsApp() {
   return (
     <a 
-      href="https://wa.me/6281234567890?text=Halo%20Dapur%20Ibu%20Japa,%20saya%20mau%20pesan" 
+      href="https://wa.me/6285736436935?text=Halo%20Dapur%20Ibu%20Japa,%20saya%20mau%20pesan" 
       target="_blank" 
       rel="noopener noreferrer" 
       className="wa-float"

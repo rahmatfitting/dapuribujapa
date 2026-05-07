@@ -44,6 +44,7 @@ export default function MenuSection() {
                   src={menu.image} 
                   alt={menu.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="img-cover"
                   style={{ borderTopLeftRadius: 'var(--radius-lg)', borderTopRightRadius: 'var(--radius-lg)' }}
                 />
@@ -63,7 +64,7 @@ export default function MenuSection() {
                   {menu.desc}
                 </p>
                 
-                <a href={`https://wa.me/6281234567890?text=Halo%20Dapur%20Ibu%20Japa,%20saya%20mau%20pesan%20${encodeURIComponent(menu.title)}`} target="_blank" rel="noopener noreferrer" className="btn btn-outline w-full text-center" style={{ width: '100%' }}>
+                <a href={`https://wa.me/6285736436935?text=Halo%20Dapur%20Ibu%20Japa,%20saya%20mau%20pesan%20${encodeURIComponent(menu.title)}`} target="_blank" rel="noopener noreferrer" className="btn btn-outline w-full text-center" style={{ width: '100%' }}>
                   Pesan Sekarang
                 </a>
               </div>

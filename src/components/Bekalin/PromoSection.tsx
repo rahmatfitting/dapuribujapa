@@ -19,7 +19,7 @@ export default function PromoSection() {
             <p className="subtitle mb-8" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
               Berlaku untuk paket bekal harian mingguan. Jangan lewatkan kesempatan memberikan makanan terbaik untuk si kecil lebih hemat.
             </p>
-            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20mau%20klaim%20promo%2015%%20untuk%20order%20pertama!" target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-lg" style={{ color: 'var(--brand-orange-dark)', fontWeight: 'bold' }}>
+            <a href="https://wa.me/6285736436935?text=Halo%20Admin,%20saya%20mau%20klaim%20promo%2015%%20untuk%20order%20pertama!" target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-lg" style={{ color: 'var(--brand-orange-dark)', fontWeight: 'bold' }}>
               Klaim Promo Sekarang
             </a>
           </div>

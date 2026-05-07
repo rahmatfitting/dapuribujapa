@@ -74,6 +74,7 @@ export default function InstagramSection() {
                     src="/images/hero.png" 
                     alt="Instagram Highlight Dapur Ibu Japa" 
                     fill
+                    sizes="(max-width: 768px) 100vw, 300px"
                     className="img-cover"
                   />
                   {/* Overlay Gradient */}

@@ -9,7 +9,7 @@ export default function FinalCTA() {
           <p className="subtitle mb-10">
             Jangan biarkan anak jajan sembarangan. Percayakan asupan nutrisinya pada kami dan rasakan ketenangan sebagai ibu.
           </p>
-          <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Ibu%20Japa,%20saya%20mau%20pesan" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg" style={{ fontSize: '1.125rem', padding: '18px 48px' }}>
+          <a href="https://wa.me/6285736436935?text=Halo%20Dapur%20Ibu%20Japa,%20saya%20mau%20pesan" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg" style={{ fontSize: '1.125rem', padding: '18px 48px' }}>
             Chat WhatsApp Sekarang
           </a>
           <p className="mt-6 text-muted" style={{ fontSize: '0.875rem' }}>
